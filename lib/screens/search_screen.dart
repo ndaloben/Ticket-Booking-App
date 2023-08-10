@@ -82,7 +82,7 @@ class SearchScreen extends StatelessWidget {
            const Gap(40),
            const DoubleText(bigText: "Upcoming Flights", smallText: "view all",),
         ],   
-      ),
+      ), 
     );
   }
 }     
