@@ -90,7 +90,7 @@ class HomeScreen extends StatelessWidget {
           const Gap(15),
           Container(
             padding: const EdgeInsets.symmetric(horizontal: 20),
-            child:            const DoubleText(bigText: "Hotels", smallText: "view all",),
+            child: const DoubleText(bigText: "Hotels", smallText: "view all",),
 
           ),
         const Gap(15),
