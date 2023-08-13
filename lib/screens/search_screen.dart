@@ -71,7 +71,7 @@ class SearchScreen extends StatelessWidget {
                         borderRadius: BorderRadius.circular(AppLayout.getHeight(12)),
                         image: const DecorationImage(
                         image: AssetImage(
-                          "images/hotel.jpeg",
+                          "images/travel.jpg",
                         )
                         ),
                       ),

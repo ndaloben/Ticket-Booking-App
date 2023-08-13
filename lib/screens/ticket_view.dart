@@ -83,10 +83,10 @@ class TicketView extends StatelessWidget {
                    SizedBox(
                     height: AppLayout.getHeight(20),
                     width: AppLayout.getWidth(10),
-                    child: DecoratedBox(
+                    child: const DecoratedBox(
                       decoration: BoxDecoration(
-                        color: isColor == null? Colors.white : Colors.grey.shade300,
-                        borderRadius: const BorderRadius.only(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.only(
                          topRight: Radius.circular(10),
                          bottomRight: Radius.circular(10),
                         )
@@ -115,13 +115,13 @@ class TicketView extends StatelessWidget {
                       },
                     ),
                   )),
-                  SizedBox(
+                  const SizedBox(
                     height: 20,
                     width: 10,
                     child: DecoratedBox(
                       decoration: BoxDecoration(
-                        color: isColor == null? Colors.white : Colors.grey.shade300,
-                        borderRadius: const BorderRadius.only(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.only(
                          topLeft: Radius.circular(10),
                          bottomLeft: Radius.circular(10),
                         )
@@ -148,19 +148,19 @@ class TicketView extends StatelessWidget {
                         firstText: ticket['date'],
                         secondText: "Date",
                         alignment: CrossAxisAlignment.start,
-                        isColor: false
+                        isColor: isColor
                         ),
                         ColumnLayout(
                           firstText: ticket['departure_time'],
                            secondText: 'Departure time', 
                            alignment: CrossAxisAlignment.center,
-                           isColor: false,
+                           isColor: isColor,
                            ),
                            ColumnLayout(
                             firstText: ticket['number'].toString(),
                              secondText: 'Number',
                               alignment: CrossAxisAlignment.end,
-                              isColor: false
+                              isColor: isColor
                               )
 
                     ],
